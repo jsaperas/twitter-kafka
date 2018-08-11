@@ -4,10 +4,10 @@ Stream Twitter data into Kafka
 ## Producer.py
 
 Instantiates the TwitterManager. If stream='console' then the StreamListener will print tweets to the console.
-If stream='kafka' and a topic name is provided, then the StreamListener on_status is overriden to send publish the Tweets to a Kafka topic.
+If stream='kafka' and a topic name is provided, then the StreamListener **on_status** method is overriden to publish Tweets to a Kafka topic.
 
 
-To start streaming we can call.
+Streams tweets and publishes them to a Kafka topic named 'tweets'
 
 ## Twitter_Manager.py
 
